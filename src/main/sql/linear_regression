@@ -1,0 +1,6 @@
+# Run with: R < linear_regression --no-save
+my.data = read.csv("/home/corey/Development/nfl_data.csv");
+attach(my.data);
+my.lm = lm(y ~ a + b + c + d + e + f + g + h);
+summary(my.lm);
+quit("no", 0, FALSE);
